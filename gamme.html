@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La gamme | Estive</title>
+<meta name="description" content="Nature, Miel, Sève de pin, Thym : quatre savons au suif de bœuf de cent grammes, saponifiés à froid et affinés dix semaines.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Hanken+Grotesk:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="gamme">
+<!-- produits.js : les données ; site.js : en-tête, pied de page et affichage des savons -->
+<script src="assets/js/produits.js"></script>
+<script src="assets/js/site.js"></script>
+
+<main id="contenu">
+
+  <header class="wrap page-tete">
+    <h1>La gamme</h1>
+    <p class="lead">Quatre pains de cent grammes, une même matière première. Le plus pur pour le quotidien, trois autres pour les saisons froides.</p>
+  </header>
+
+  <!-- Les savons sont générés depuis assets/js/produits.js -->
+  <section class="wrap" aria-label="Les savons">
+    <div data-gamme></div>
+    <p class="note-cuvee">Chaque cuvée compte <span data-valeur="tailleCuvee">25</span> pains. Lorsqu’elle est épuisée, la suivante n’est mise en vente qu’au terme de ses <span data-valeur="semainesAffinage">10</span> semaines d’affinage&nbsp;: c’est un délai que nous préférons annoncer plutôt qu’abréger.</p>
+  </section>
+
+  <div class="section"></div>
+</main>
+
+<script src="assets/js/panier.js"></script>
+</body>
+</html>
