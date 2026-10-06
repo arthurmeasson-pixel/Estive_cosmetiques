@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L’atelier | Estive</title>
+<meta name="description" content="Fonte, saponification à froid, moulage, affinage : comment sont faits les savons Estive, par cuvées de vingt-cinq pains.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Hanken+Grotesk:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="atelier">
+<!-- produits.js : les données ; site.js : en-tête, pied de page et affichage des savons -->
+<script src="assets/js/produits.js"></script>
+<script src="assets/js/site.js"></script>
+
+<main id="contenu">
+
+  <header class="wrap page-tete">
+    <h1>L’atelier</h1>
+    <p class="lead">Des cuvées de <span data-valeur="tailleCuvee">25</span> pains, coulés, découpés et pesés à la main en Haute-Savoie, puis laissés au repos le temps qu’il faut.</p>
+  </header>
+
+  <section class="wrap" aria-label="Les étapes de fabrication">
+    <ol class="etapes-atelier">
+      <li class="atelier-etape">
+        <figure class="media"><img src="assets/img/atelier/1-fonte.svg" alt="Le suif fond dans une marmite" width="600" height="600"></figure>
+        <div>
+          <p class="num">I</p>
+          <h2>Fonte</h2>
+          <p>Le suif, qui nous vient de <span data-valeur="provenanceSuif">la ferme de Clemensaigne, à Longessaigne</span>, est fondu avec de l’eau, puis filtré, jusqu’à devenir une matière blanche, neutre et stable. C’est cette purification qui rend le savon inodore&nbsp;: il ne garde aucune note animale.</p>
+        </div>
+      </li>
+      <li class="atelier-etape">
+        <figure class="media"><img src="assets/img/atelier/2-saponification.svg" alt="La pâte de savon est mélangée" width="600" height="600"></figure>
+        <div>
+          <p class="num">II</p>
+          <h2>Saponification à froid</h2>
+          <p>Le suif, et selon les pains une huile d’appoint, est mêlé à la solution de soude sans cuisson. La réaction transforme les corps gras en savon et produit de la glycérine, qui reste dans le pain au lieu d’en être extraite.</p>
+        </div>
+      </li>
+      <li class="atelier-etape">
+        <figure class="media"><img src="assets/img/atelier/3-moulage.svg" alt="Vingt-cinq pains découpés dans leur moule" width="600" height="600"></figure>
+        <div>
+          <p class="num">III</p>
+          <h2>Moulage</h2>
+          <p>La pâte est coulée en moule et laissée à prendre, puis découpée et pesée pain par pain. Une cuvée donne <span data-valeur="tailleCuvee">25</span> pains, pas davantage.</p>
+        </div>
+      </li>
+      <li class="atelier-etape">
+        <figure class="media"><img src="assets/img/atelier/4-affinage.svg" alt="Les pains sèchent sur des étagères" width="600" height="600"></figure>
+        <div>
+          <p class="num">IV</p>
+          <h2>Affinage</h2>
+          <p><span data-valeur="semainesAffinage">10</span> semaines au minimum, à l’air libre. Le pain perd son eau, se durcit et gagne en douceur à mesure qu’il vieillit. C’est l’étape la plus longue, et celle qu’on ne peut pas abréger.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" aria-labelledby="titre-cuvees">
+    <div class="wrap deux-col bloc-filet">
+      <h2 class="titre" id="titre-cuvees">Pourquoi de si petites cuvées</h2>
+      <div class="prose">
+        <p>Vingt-cinq pains, c’est ce que l’on peut couler, découper et surveiller avec soin en une seule fois. Lorsqu’une cuvée est épuisée, la suivante n’est mise en vente qu’au terme de son affinage&nbsp;: c’est un délai que nous préférons annoncer plutôt qu’abréger.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="titre-nom">
+    <div class="wrap deux-col bloc-filet">
+      <h2 class="titre" id="titre-nom">Le nom</h2>
+      <div class="prose">
+        <p>L’estive, c’est le pâturage d’altitude où montent les troupeaux l’été, quand l’herbe des vallées ne suffit plus. Les bêtes y passent la belle saison, à l’herbe, sous la garde de quelqu’un.</p>
+        <p>Le nom rappelle d’où vient la matière de nos savons, l’élevage, et le pays où ils sont faits.</p>
+        <a class="btn btn-espace" href="gamme.html">Découvrir la gamme</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="assets/js/panier.js"></script>
+</body>
+</html>

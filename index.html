@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estive, savons au suif de bœuf de Haute-Savoie</title>
+<meta name="description" content="Savons au suif de bœuf, saponifiés à froid et affinés dix semaines en Haute-Savoie. Des cuvées de vingt-cinq pains, le moins d’ingrédients possible.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Hanken+Grotesk:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="accueil">
+<!-- produits.js : les données ; site.js : en-tête, pied de page et affichage des savons -->
+<script src="assets/js/produits.js"></script>
+<script src="assets/js/site.js"></script>
+
+<main id="contenu">
+
+  <!-- Ouverture : la photo est dans assets/img/accueil.jpg -->
+  <section class="hero" aria-labelledby="titre-accueil">
+    <div class="hero-media">
+      <img src="assets/img/accueil.jpg" width="933" height="1400" alt="Une main tient un pain de savon Estive couvert de mousse" fetchpriority="high">
+    </div>
+    <div class="hero-text">
+      <h1 id="titre-accueil">Élever le plus simple des gestes.</h1>
+      <p>Savons au suif de bœuf, saponifiés à froid et affinés dix semaines en Haute-Savoie. Le moins d’ingrédients possible, et chacun a sa raison d’être.</p>
+      <div class="hero-actions">
+        <a class="btn btn-clair" href="gamme.html">Découvrir la gamme</a>
+        <a class="lien" href="suif.html">Pourquoi le suif&#8239;?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- La gamme : les cartes sont générées depuis assets/js/produits.js -->
+  <section class="section" aria-labelledby="titre-gamme">
+    <div class="wrap">
+      <div class="tete-section">
+        <div>
+          <h2 class="titre" id="titre-gamme">La gamme</h2>
+          <p class="lead">Quatre pains de cent grammes, une même matière première.</p>
+        </div>
+        <a class="btn btn-ghost" href="gamme.html">Voir toute la gamme</a>
+      </div>
+      <div class="cartes" data-cartes="tous"></div>
+    </div>
+  </section>
+
+  <!-- Le suif, en bref -->
+  <section class="section" aria-labelledby="titre-suif">
+    <div class="wrap engage">
+      <figure class="media"><img src="assets/img/gamme-empilee.svg" alt="Les quatre pains de la gamme empilés" loading="lazy" width="1200" height="1500"></figure>
+      <div class="engage-text">
+        <h2 class="titre" id="titre-suif">Trois ingrédients suffisent à faire un savon.</h2>
+        <p>Avant l’huile de palme et les tensioactifs de synthèse, on savonnait avec ce que l’élevage produisait déjà. Le suif possède une composition en acides gras proche de celle du sébum&nbsp;: il nettoie sans priver la peau de ce qui la protège.</p>
+        <p>Le nôtre vient de <span data-valeur="provenanceSuif">la ferme de Clemensaigne, à Longessaigne</span>.</p>
+        <ul class="avantages-courts">
+          <li><h3>Hydratation</h3><p>Il aide la peau à garder son eau, bien après le rinçage.</p></li>
+          <li><h3>Barrière cutanée</h3><p>Il respecte le film qui protège l’épiderme.</p></li>
+          <li><h3>Douceur</h3><p>Ni parfum de synthèse, ni conservateur, ni sulfate.</p></li>
+          <li><h3>Sobriété</h3><p>Un coproduit de l’élevage&nbsp;: aucune terre cultivée pour lui.</p></li>
+        </ul>
+        <a class="btn" href="suif.html">Les bienfaits du suif</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- L'atelier, en bref -->
+  <section class="section" aria-labelledby="titre-atelier">
+    <div class="wrap">
+      <div class="tete-section">
+        <div>
+          <h2 class="titre" id="titre-atelier">L’atelier, en quatre temps</h2>
+          <p class="lead">Des cuvées de <span data-valeur="tailleCuvee">25</span> pains, coulés, découpés et pesés à la main.</p>
+        </div>
+      </div>
+      <ol class="etapes">
+        <li class="etape">
+          <figure class="media"><img src="assets/img/atelier/1-fonte.svg" alt="" loading="lazy" width="600" height="600"></figure>
+          <p class="num">I</p><h3>Fonte</h3>
+          <p>Le suif est fondu avec de l’eau puis filtré, jusqu’à devenir une matière blanche et neutre.</p>
+        </li>
+        <li class="etape">
+          <figure class="media"><img src="assets/img/atelier/2-saponification.svg" alt="" loading="lazy" width="600" height="600"></figure>
+          <p class="num">II</p><h3>Saponification à froid</h3>
+          <p>Il est mêlé à la solution de soude sans cuisson&nbsp;: la glycérine reste dans le pain.</p>
+        </li>
+        <li class="etape">
+          <figure class="media"><img src="assets/img/atelier/3-moulage.svg" alt="" loading="lazy" width="600" height="600"></figure>
+          <p class="num">III</p><h3>Moulage</h3>
+          <p>La pâte est coulée en moule, laissée à prendre, puis découpée et pesée pain par pain.</p>
+        </li>
+        <li class="etape">
+          <figure class="media"><img src="assets/img/atelier/4-affinage.svg" alt="" loading="lazy" width="600" height="600"></figure>
+          <p class="num">IV</p><h3>Affinage</h3>
+          <p>Dix semaines au minimum, à l’air libre. Le pain perd son eau et gagne en douceur.</p>
+        </li>
+      </ol>
+      <div class="centre"><a class="btn" href="atelier.html">Entrer dans l’atelier</a></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="assets/js/panier.js"></script>
+</body>
+</html>
